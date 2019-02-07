@@ -28,12 +28,18 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    '~/assets/scss/foundation.scss',
+
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {
+      ssr: false,
+      src: 'node_modules/foundation-sites/js/entries/foundation.js',
+    },
   ],
 
   /*
@@ -50,7 +56,7 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
     }
   }
 }

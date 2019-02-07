@@ -20,16 +20,19 @@
           class="button--grey"
         >GitHub</a>
       </div>
+      <BannerCtaSticky />
     </div>
   </section>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import BannerCtaSticky from '~/components/banner.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    BannerCtaSticky
   }
 }
 </script>
